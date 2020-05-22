@@ -1,0 +1,24 @@
+{
+  "name": "projetonode",
+  "version": "1.0.0",
+  "description": "Iniciando back-end com node",
+  "scripts": {
+    "start":"nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ederpbj/projetonode.git"
+  },
+  "author": "Eder Pires",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ederpbj/projetonode/issues"
+  },
+  "homepage": "https://github.com/ederpbj/projetonode#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
