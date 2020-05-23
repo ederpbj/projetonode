@@ -32,3 +32,10 @@ Mustache |`npm install mustache-express --save`
 
 ## Notas
 > HTML 5 > CSS3 > Bootstrap > ReactJS, Angula,ou Vue > Mobile
+
+
+### Padrão MVC
+> Festa
+M - Model (Seleciona as bebidas)
+V - View (Dono da casa)
+C - Controller (Controla como funciona)

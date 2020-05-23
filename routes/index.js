@@ -1,31 +1,15 @@
 const express = require('express');
-
+const homeConntroller = require('../controllers/homeController');
+const userConntroller = require('../controllers/userConntroller');
 
 // Rotas
 const router = express.Router();
 
 // F2 Rota raiz, Generica
-router.get('/', (req, res) => {
-  // renderizar página, manda parametros para views
-  let obj = {
-    'nome': req.query.nome,
-    'idade': 38,
-    mostrar: true,
-    ingredientes: [
-      {nome: 'Arroz', qtd: '20g'},
-      {nome: 'Macarrão', qtd: '100g'},
-    ]
-  }
-  res.render('home', obj);
-});
+router.get('/', homeConntroller.index);
 
-//F1 Rota raiz, Generica
-/* router.get('/', (req, res) => {
-  // renderizar página, manda parametros para views
-  res.render('home', {
-    'nome': 'Éder',
-    'idade': 38
-  });
-});
- */
+// Rota login
+router.get('/users/login', userConntroller.login);
+router.get('/users/register', userConntroller.register);
+
 module.exports = router;

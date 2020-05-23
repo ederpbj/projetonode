@@ -1,0 +1,40 @@
+{{! F2 }}
+<h1>Seja bem vindo!</h1>
+<p>Qualquer mensagem</p>
+
+{{#mostrar}}
+<p>Nome: {{nome}} - Idade: {{idade}}</p>
+{{/mostrar}}
+
+<hr/>
+
+<ul>
+{{#ingredientes}}
+  <li>{{nome}} - {{qtd}}</li>
+{{/ingredientes}}
+</ul>
+
+<hr/>
+
+<ul>
+{{#interesses}}
+  <li>{{.}}</li>
+{{/interesses}}
+</ul>
+
+<hr/>
+
+{{teste}}
+<br/>
+{{{teste}}}
+
+<hr/>
+
+{{^vazio}}
+  <p>Não há ingredientes</p>
+{{/vazio}}
+
+<hr/>
+
+{{! Comentário }}
+
