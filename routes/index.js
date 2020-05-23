@@ -4,10 +4,8 @@ const userConntroller = require('../controllers/userConntroller');
 
 // Rotas
 const router = express.Router();
-
 // F2 Rota raiz, Generica
-router.get('/', homeConntroller.index);
-
+router.get('/', homeConntroller.userMiddleware, homeConntroller.index);
 // Rota login
 router.get('/users/login', userConntroller.login);
 router.get('/users/register', userConntroller.register);

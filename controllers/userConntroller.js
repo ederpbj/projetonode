@@ -2,6 +2,6 @@ exports.login = (req, res) => {
   res.render('login');
 }
 
-exports.registar = (req, res) => {
+exports.register = (req, res) => {
   res.render('register');
 }
